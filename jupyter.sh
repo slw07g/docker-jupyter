@@ -1,6 +1,6 @@
 #!/bin/bash
-DOCKER_NAME="ubuntu"
-DOCKER_TAG="ubuntu:latest"
+DOCKER_NAME="docker-jupyter"
+DOCKER_TAG="slw07g/docker-jupyter:latest"
 JUPYTER_PORT=8888
 JUPYTER_NOTEBOOKS_PATH=`pwd`/jupyter-notebooks
 usage()
@@ -36,4 +36,4 @@ docker build . -t $DOCKER_TAG
 
 # Add a persistent docker volume, kali-staging
 DOCKER_OPTS=" -v ${JUPYTER_NOTEBOOKS_PATH}:/root/jupyter-notebooks:rw --publish=${JUPYTER_PORT}:8888"
-docker run --rm --name ${DOCKER_NAME}2 -it --sysctl net.ipv6.conf.all.disable_ipv6=0 --cap-add=NET_ADMIN  $DOCKER_OPTS  $DOCKER_TAG
+docker run --name ${DOCKER_NAME}2 -it --sysctl net.ipv6.conf.all.disable_ipv6=0 --cap-add=NET_ADMIN  $DOCKER_OPTS  $DOCKER_TAG
