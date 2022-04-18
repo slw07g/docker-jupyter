@@ -6,7 +6,7 @@ JUPYTER_NOTEBOOKS_PATH=`pwd`/jupyter-notebooks
 usage()
 {
   cat << EOF
-usage: bash ./kali.sh [-o <ovpn_file>] [-g <github_username>]
+usage: bash ./jupyter.sh [-o <ovpn_file>] [-g <github_username>]
 -n    | --notebooks_path         (optional)      Path to folder containing jupyter notebooks
 -p    | --port                   (optional)      Local port to forward to jupyter notebook server in container
 -h    | --help                            Brings up this menu

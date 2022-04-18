@@ -5,7 +5,7 @@ More dependencies can be added to the docker container either modifying the Dock
 
 To run the docker container, just run `jupyter.sh`
 
-usage: bash ./kali.sh [-o <ovpn_file>] [-g <github_username>]
+usage: bash ./jupyter.sh [-o <ovpn_file>] [-g <github_username>]
 -n    | --notebooks_path         (optional)      Path to folder containing jupyter notebooks
 -p    | --port                   (optional)      Local port to forward to jupyter notebook server in container
 -h    | --help                            Brings up this menu

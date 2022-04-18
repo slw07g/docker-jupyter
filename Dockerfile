@@ -16,6 +16,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
   qgrid \
   pandas \
   ip2asn \
+  snowflake-connector-python \
   pycryptodome && \
   jupyter nbextension enable --py --sys-prefix qgrid && \
   jupyter nbextension enable --py --sys-prefix widgetsnbextension
